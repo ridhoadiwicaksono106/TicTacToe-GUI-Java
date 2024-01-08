@@ -20,7 +20,7 @@ A simple Tic Tac Toe game implemented in Java with a graphical user interface (G
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/TicTacToeGUI.git
+    git clone https://github.com/ridhoadiwicaksono106/TicTacToe-GUI-Java.git
     ```
 
 2. Open the project in your preferred Java IDE.
