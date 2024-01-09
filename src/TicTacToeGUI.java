@@ -91,7 +91,7 @@ public class TicTacToeGUI extends JFrame {
 
                     if (isBotEnabled && currentPlayer.equals("O")) {
                         playBotMove();
-                        currentPlayer = "X"; // Ensure user can play after bot move
+                        currentPlayer = "X"; 
                     }
                 }
             }
@@ -103,20 +103,19 @@ public class TicTacToeGUI extends JFrame {
     }
 
     private boolean checkWin(String symbol) {
-        // Check rows, columns, and diagonals for a win
         for (int i = 0; i < 3; i++) {
             if (buttons[i][0].getText().equals(symbol) && buttons[i][1].getText().equals(symbol) && buttons[i][2].getText().equals(symbol)) {
-                return true; // Check rows
+                return true; 
             }
             if (buttons[0][i].getText().equals(symbol) && buttons[1][i].getText().equals(symbol) && buttons[2][i].getText().equals(symbol)) {
-                return true; // Check columns
+                return true; 
             }
         }
         if (buttons[0][0].getText().equals(symbol) && buttons[1][1].getText().equals(symbol) && buttons[2][2].getText().equals(symbol)) {
-            return true; // Check diagonal from top-left to bottom-right
+            return true; 
         }
         if (buttons[0][2].getText().equals(symbol) && buttons[1][1].getText().equals(symbol) && buttons[2][0].getText().equals(symbol)) {
-            return true; // Check diagonal from top-right to bottom-left
+            return true; 
         }
         return false;
     }
@@ -133,7 +132,6 @@ public class TicTacToeGUI extends JFrame {
     }
 
     private void playBotMove() {
-        // Simple bot: randomly choose an empty cell
         int emptyCells = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
